@@ -1,0 +1,22 @@
+FrankenRomP
+==============
+
+Getting Started
+----------------
+
+To get started with Android/FrankenRomP, you'll need to get
+familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
+
+To initialize your local repository using the FrankenRomP trees, use a command like this:
+
+    repo init -u git://github.com/FrankenRomP/android_manifest.git -b pie
+
+Then to sync up:
+
+    repo sync -j8
+    
+. build/envsetup.sh
+breakfast device name
+time mka franken
+
+Profit!

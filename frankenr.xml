@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?> <manifest>
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="franken"
+           fetch="https://github.com/FrankenRomP"
+           revision="pie" 
+           sync-j="12" />
+
+  <!-- START FRANKEN -->
+  <project path="build/make" name="android_build" groups="pdk" remote="franken" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="franken" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="art" name="android_art" groups="pdk" remote="franken" />
+  <project path="bionic" name="android_bionic" groups="pdk" remote="franken" />
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="franken" />
+  <project path="dalvik" name="android_dalvik" groups="pdk-cw-fs,pdk-fs" remote="franken" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="franken" />
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="franken" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="franken" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="franken" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" remote="franken" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="franken" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" groups="pdk" remote="franken" />
+  <project path="frameworks/support" name="android_frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="franken" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk" remote="franken" />
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="franken" />
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" groups="pdk-fs" remote="franken" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" groups="pdk-fs" remote="franken" />
+  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" groups="pdk-cw-fs,pdk-fs" remote="franken" />
+  <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="franken" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="franken" />
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" groups="pdk-fs" remote="franken" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="franken" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="franken" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="franken" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="franken" />
+  <project path="system/bt" name="android_system_bt" groups="pdk" remote="franken" />
+  <project path="system/core" name="android_system_core" groups="pdk" remote="franken" />
+  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="franken" />
+  <project path="system/vold" name="android_system_vold" groups="pdk" remote="franken" />
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="franken" />
+  <project path="vendor/franken" name="android_vendor_franken" remote="franken" />
+  <!-- FINISH FRANKEN -->
+
+</manifest>
