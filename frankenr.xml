@@ -53,6 +53,7 @@
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="franken" />
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="franken" />
   <project path="vendor/franken" name="android_vendor_franken" remote="franken" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="franken" />
   <!-- FINISH FRANKEN -->
 
 </manifest>
