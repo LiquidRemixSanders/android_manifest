@@ -27,6 +27,7 @@
   <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="franken" />
   <project path="dalvik" name="android_dalvik" groups="pdk-cw-fs,pdk-fs" remote="franken" />
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="franken" />
+  <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="franken" />
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="franken" />
   <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="franken" />
   <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="franken" />
