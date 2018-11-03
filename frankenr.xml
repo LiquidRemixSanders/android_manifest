@@ -53,6 +53,7 @@
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="franken" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="franken" />
   <project path="system/bt" name="android_system_bt" groups="pdk" remote="franken" />
+  <project path="system/qcom" name="android_system_qcom" groups="pdk" remote="franken" />
   <project path="system/core" name="android_system_core" groups="pdk" remote="franken" />
   <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="franken" />
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="franken" />
